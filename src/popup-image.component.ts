@@ -8,12 +8,12 @@ import { Component, Input, Output, ViewChild, ElementRef, EventEmitter, ViewEnca
                 <a class="nav-left" *ngIf="listLenght > 1" (click)="prevImage()"><i class="fa fa-angle-left"></i></a>
                 <img #imgpopup class="effect" alt="carregando..." />         
                 <a class="nav-right" *ngIf="listLenght > 1" (click)="nextImage()"><i class="fa fa-angle-right"></i></a>
-                <a class="close-popup" (click)="closeGallery()"><i class="fa fa-close"></i></a>
+                <a class="close-popup" (click)="closeGallery()"><i class="fas fa-times"></i></a>
         </div>
    </div>` ,
   styleUrls: ['./popup-image.css'],
   encapsulation: ViewEncapsulation.None
-})
+})a
 export class PopupImageComponent {
 
   private currentImageIndex: number;
